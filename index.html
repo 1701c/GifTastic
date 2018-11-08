@@ -17,6 +17,29 @@
 <body>
   <div class="container">
     <div class="row">
+      <div class="col-2 text-center" id="bannerGif1"></div>
+      <div class="col-8 text-center">
+        <img src="http://www.animatedimages.org/data/media/43/animated-letter-image-0184.gif" class="banner-gif" alt="animated-letter-image-0184" />
+
+        <img src="http://www.animatedimages.org/data/media/43/animated-letter-image-0182.gif" class="banner-gif" alt="animated-letter-image-0182" />
+
+        <img src="http://www.animatedimages.org/data/media/43/animated-letter-image-0186.gif" class="banner-gif" alt="animated-letter-image-0186" />
+
+        <img src="http://www.animatedimages.org/data/media/43/animated-letter-image-0201.gif" class="banner-gif" alt="animated-letter-image-0201" />
+
+        <img src="http://www.animatedimages.org/data/media/43/animated-letter-image-0213.gif" class="banner-gif" alt="animated-letter-image-0213" />
+
+        <img src="http://www.animatedimages.org/data/media/43/animated-letter-image-0199.gif" class="banner-gif" alt="animated-letter-image-0199" />
+
+        <img src="http://www.animatedimages.org/data/media/43/animated-letter-image-0201.gif" class="banner-gif" alt="animated-letter-image-0201" />
+
+        <img src="http://www.animatedimages.org/data/media/43/animated-letter-image-0182.gif" class="banner-gif" alt="animated-letter-image-0182" />
+
+        <img src="http://www.animatedimages.org/data/media/43/animated-letter-image-0190.gif" class="banner-gif" alt="animated-letter-image-0190" />
+      </div>
+      <div class="col-2 text-center" id="bannerGif2"></div>
+    </div>
+    <div class="row">
       <div class="col" id="buttonDiv"></div>
     </div>
     <div class="row">
@@ -24,8 +47,26 @@
         Add a button: <input type=text id="addButton">
       </div>
     </div>
-    <div id="images"></div>
+    <div class="row">
+      <div class="col" id="images"></div>
+    </div>
   </div>
+
+<div class="modal fade" id="gifModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center"></div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
+
 </body>
 
 </html>

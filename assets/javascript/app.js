@@ -44,7 +44,7 @@ var app = {
 
   drawModal: function (gifID) {
     $.ajax({
-      url: 'http://api.giphy.com/v1/gifs/' + gifID + '?api_key=dc6zaTOxFJmzC',
+      url: 'https://api.giphy.com/v1/gifs/' + gifID + '?api_key=dc6zaTOxFJmzC',
       method: 'GET'
     }).done(function (response) {
       var star = $('<img>');
@@ -148,7 +148,7 @@ var app = {
     if (favoritesIDs) {
       for (i = 0; i < favoritesIDs.length; i++) {
         $.ajax({
-          url: 'http://api.giphy.com/v1/gifs/' + favoritesIDs[i] + '?api_key=dc6zaTOxFJmzC',
+          url: 'https://api.giphy.com/v1/gifs/' + favoritesIDs[i] + '?api_key=dc6zaTOxFJmzC',
           method: 'GET'
         }).done(function (response) {
           favoritesArray.push(response.data);
@@ -161,7 +161,7 @@ var app = {
     randomGifArray = [];
     for (i = 0; i < 10; i++) { // API only allows 1 random image request
       $.ajax({
-        url: 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC',
+        url: 'https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC',
         method: 'GET'
       }).done(function (response) {
         randomGifArray.push(response.data);
@@ -172,7 +172,7 @@ var app = {
 
   fetchSingleRandom: function (element) {
     $.ajax({
-      url: 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rating=g&tag=dancing',
+      url: 'https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rating=g&tag=dancing',
       method: 'GET'
     }).done(function (response) {
       $(element).append('<img class="img-fluid" src="' + response.data.fixed_width_small_url + '">')

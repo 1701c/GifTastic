@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(189, 188, 188);
+  background-color: rgb(159, 175, 189);
 }
 
 .col-4, .col-6 {
@@ -10,14 +10,27 @@ body {
   padding: 0px 10px;
 }
 
+#title {
+  margin-bottom: 10px;
+}
+ 
+.no-gutters {
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+}
+
+#makeFav {
+  width: 20px;
+  margin-left: 10px;
+}
+
 .btn {
   margin: 4px;
 }
 
 .modal-footer {
   display: block !important;
-  /* align-items: left !important;
-  justify-content: flex-start !important; */
 }
 
 .back1 {
@@ -44,15 +57,12 @@ body {
   background-color: #ffe6d0;
 }
 
-@media (max-width: 560px) {
-  .banner-gif {
-    height: 50px;
-  }
-}
-
 @media (max-width: 768px) {
   .col-6 {
     padding: 2px 15px !important;
+  }
+  .banner-gif {
+    height: 50px;
   }
 }
 
